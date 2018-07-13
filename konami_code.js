@@ -12,11 +12,20 @@ const codes = [
 ];
 
 
-var checkingCode = true
+var checkingCode = false
+var index = 0
 
 function onKeyDownHandler(e) {
-  const key = e.key;
+  const key = e.key
   console.log(`I have a ${key}`)
+  if (not checkingCode) { 
+    if (key === "ArrowUp") {
+      checkingCode = true
+    }
+  } else {
+    
+  }
+
 }
 
 function init() {
