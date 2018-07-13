@@ -12,7 +12,7 @@ const codes = [
 ];
 
 
-const 
+var checkingCode = true
 
 function onKeyDownHandler(e) {
   const key = e.key;
