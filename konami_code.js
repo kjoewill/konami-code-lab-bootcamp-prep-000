@@ -13,17 +13,22 @@ const codes = [
 
 
 var checkingCode = false
-var index = 0
+var index = 1
 
 function onKeyDownHandler(e) {
   const key = e.key
   console.log(`I have a ${key}`)
-  if (not checkingCode) { 
+  if (!checkingCode) { 
     if (key === "ArrowUp") {
       checkingCode = true
     }
   } else {
-    
+    if (key === codes[index]) {
+      index++
+      if (index === 10) {
+        alert("You get the egg!")
+      }
+    }
   }
 
 }
