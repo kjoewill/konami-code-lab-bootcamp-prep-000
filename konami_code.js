@@ -29,6 +29,7 @@ function onKeyDownHandler(e) {
       if (index === 10) {
         console.log ("You did it and get the egg!")}
     } else {
+      checkingCode = false
       index = 1
       console.log("search failed!")
     }
