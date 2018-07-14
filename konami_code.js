@@ -27,6 +27,7 @@ function onKeyDownHandler(e) {
     if (key === codes[index]) {
       index++
       if (index === 10) {
+        alert("You did it")
         console.log ("You did it and get the egg!")}
     } else {
       checkingCode = false
