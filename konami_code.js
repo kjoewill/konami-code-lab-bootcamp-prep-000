@@ -21,12 +21,16 @@ function onKeyDownHandler(e) {
   if (!checkingCode) { 
     if (key === "ArrowUp") {
       checkingCode = true
+      console.log ("Now checking pattern")
     }
   } else {
     if (key === codes[index]) {
       index++
       if (index === 10) {
         console.log ("You did it and get the egg!")}
+    } else {
+      index = 1
+      console.log("search failed!")
     }
   }
 
